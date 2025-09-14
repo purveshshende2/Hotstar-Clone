@@ -17,3 +17,10 @@ spec:
         image: sevenajay/hotstar:latest
         ports:
         - containerPort: 3000  # Port your application listens on
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
